@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 from datetime import datetime
 from datetime import timedelta
+from ..att_private import caminho_diario
 
 def qual_semana_ano():
     # Pega a data de hoje com o datetime
@@ -102,6 +103,6 @@ def get_domingo(data_recebida):
     return domingo_previsto
 
 
-path_folder_diario = "C:\FernandoLeao\Diario"
+path_folder_diario = caminho_diario
 
 criar_pasta(path_folder_diario)
